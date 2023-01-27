@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/numbers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.calculator{
+    width: 300px;
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 5px black;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+
+input{
+    grid-column: span 4;
+    width: 260px;
+    height: 70px;
+    background-color:#ecf0f3;
+    box-shadow: inset -5px -5px 12px white,
+                inset  5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+input:focus{
+    outline: none;
+}
+input:hover{
+    background-image: url(images/numbers.jpg);
+    color: black;
+    cursor: pointer;
+}
+
+button{
+    width: 48px;
+    height: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px white,
+                 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    color:gray;
+    font-size:20px;
+    border: 1px solid grey;
+}
+.equalButton{
+    width: 115px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px white,
+                 5px 5px 12px rgba(0,0,0,.16);   
+}
+
+@media screen and (max-width:600px){
+
+    .calculator{
+            width: 270px;
+            padding: 5px;
+    }
+    input {
+        width: 200px;
+        height: 50px;
+        margin-left: 28px;
+        font-size: 30px;
+    }
+    button{
+         width: 40px;
+         height: 40px;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
